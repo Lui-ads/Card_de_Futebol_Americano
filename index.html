@@ -1,0 +1,86 @@
+<!-- file:///home/lui/College/4th_Semester/Desenvolvimento_Web_1/Trabalhos/trabalho_HTML.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css"> 
+    <link rel="stylesheet" href="trabalho_CSS.css">
+    <link rel="icon" href="bola.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;700&family=Teko:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="trabalho_JS.js"></script>
+</head>
+<body>
+    <div id="superborda">
+        <div id="superborda2">
+            <div id="formulario">
+                <p id="p1">Trabalho II do 4º Semestre TADS - Desenvolvimento Web 1</p>
+                <form action="" method="get">
+                    <!-- ... (todos os seus inputs e selects continuam iguais aqui) ... -->
+                    <div class="entradas">
+                        <label for="nome">Nome do Time:</label>
+                        <input id="nome" type="text" name="nome_do_time" required placeholder="Informe o nome do time">
+                    </div>
+                    <div class="entradas">
+                        <label for="localizacao">Localização:</label>
+                        <input id="localizacao" type="text" name="localizacao_do_time" required placeholder="Informe a Localização">
+                    </div>
+                    <div class="entradas">
+                        <label for="ano">Ano de Fundação:</label>
+                        <input id="ano" type="text" name="ano_de_fundacao" required placeholder="dd/mm/aa">
+                    </div>
+                    <div class="entradas">
+                        <label for="qnt_superbwls">Quantidade de Superbowls:</label>
+                        <select id="qnt_sb" name="qnt_sb" required>
+                            <option value="">Superbowls</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="+10">+10</option>
+                        </select>
+                    </div>
+                    <div class="entradas">
+                        <label for="qnt_conferencia">Conferência:</label>
+                        <select id="qnt_c" name="qnt_c" required>
+                            <option value="">Conferência</option>
+                            <option value="AFC East">AFC East</option>
+                            <option value="AFC North">AFC North</option>
+                            <option value="AFC South">AFC South</option>
+                            <option value="AFC West">AFC West</option>
+                            <option value="NFC East">NFC East</option>
+                            <option value="NFC North">NFC North</option>
+                            <option value="NFC South">NFC South</option>
+                            <option value="NFC West">NFC West</option>
+                        </select>
+                    </div>
+                    <div class="entradas">
+                        <label for="foto">Escolha uma imagem:</label>
+                        <input type="file" id="foto_id" name="foto" accept="image/*" required>
+                    </div>
+                    <div id="botoes">
+                        <input type="submit" id="enviar" value="Salvar">
+                        <input type="reset" id="limpar" value="Limpar">
+                    </div>
+                </form> 
+            </div>
+            <div id="cardes"></div>
+            <footer id="footer">
+                <p id="um">Feito e</p>
+                <p id="dois">aprovado pela</p>
+                <p id="tres">OBAF</p>
+            </footer>  
+
+        </div>
+    </div>
+</body>
+</html>
